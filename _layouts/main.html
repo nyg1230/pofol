@@ -9,26 +9,11 @@
         {% include header.html %}
         {% include navigation.html %}
 
-        <div id="recent">
-            <table>
-                <caption>최근 등록된 글</caption>
-                <thead>
-                    <tr>
-                        <th>등록일</th>
-                        <th>제목</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                </tbody>
-                <tfoot>
-
-                </tfoot>
-            </table>
-        </div>
-
-        {{ content }}
-
+        {% include recentPostingList.html %}
+        {% include categoryList.html %}
+        
+        {% include test.html %}
+        
         {% include footer.html %}
     </body>
 </html>
