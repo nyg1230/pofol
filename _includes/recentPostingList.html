@@ -1,0 +1,23 @@
+<div id="recentPostingList">
+  <table>
+    <caption>최근 등록한 게시글</caption>
+    <thead>
+      <tr>
+        <th>등록일</th>
+        <th>제목</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in site.posts %}
+      <tr>
+        <td>
+          <span>{{ post.date }}</span>
+        </td>
+        <td>
+          <a href = {{ post.url }}>{{ post.title }}</a>
+        </td>
+      </tr>
+      {% endif %}
+    <tbody>
+  </table>
+</div>
