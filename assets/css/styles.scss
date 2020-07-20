@@ -1,3 +1,15 @@
 ---
 ---
 @import "main";
+
+#recent {
+    width   : 30%;
+    height  : 70%;
+    margin  : 0% 0% 1% 0%;
+    float   : left;
+    border  : 1px solid #000
+}
+
+#recent table {
+    width   : 100%;
+}
