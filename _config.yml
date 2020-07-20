@@ -20,7 +20,7 @@
 
 title: Welcome
 email: nyg1230@gmail.com
-description: 
+description: nope
 baseurl: "/pofol"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: nope
@@ -30,6 +30,8 @@ github_username:  nyg1230
 theme: minima
 plugins:
   - jekyll-feed
+
+encoding: UTF-8
 
 # Exclude from processing.
 # The following items will not be processed, by default.
