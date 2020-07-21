@@ -1,1 +1,33 @@
+html, body {
+    height: 98%;
+}
 
+#leftDiv {
+    width   : 68%;
+    height  : 70%;
+    margin  : 0% 0% 1% 0%;
+    float   : left;
+    border  : 1px solid #000
+}
+
+#rightDiv {
+    width   : 30%;
+    padding : auto;
+    height  : 70%;
+    margin  : 0% 0% 1% 0%;
+    float   : right;
+    border  : 1px solid #000;
+}
+
+header {
+    padding : 20px;
+    margin  : 0% 0% 1% 0%;
+    border  : 1px solid #000;
+}
+
+footer {
+    width   : 100%;
+    clear   : both;
+    margin  : 1% 0% 0% 0%;
+    border  : 1px solid #000;
+}

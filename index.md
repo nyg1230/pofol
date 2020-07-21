@@ -1,4 +1,4 @@
 ---
-layout  : main
+layout  : welcome
 title   : index
 ---

@@ -1,10 +1,59 @@
+<style>
+    .navi {
+
+    }
+
+    .navi span {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .aco {
+        display: none;
+    }
+
+    .aco:checked ~ ul {
+        display: block;
+    }
+
+    .aco ~ ul {
+        display: none;
+    }
+
+    a:hover, li label:hover {
+        color: darkred;
+        cursor: pointer;
+    }
+</style>
+
 <nav id="navi" class="navi">
-    <a>
-        About
-    </a>
-    <a>
-        Posting
-    </a>
-    
+    <span>Menu</span>
+    <br/>
+    <ul>
+        <li>
+            <a href="{{ bsaeurl }}/">Home</a>
+        </li>
+        <li>
+            <input type = 'checkbox' id = 'chkCate' class = 'aco'>
+            <label for='chkCate'>Category</label>
+            <ul>
+                <li>
+                    <a href='{{ baseurl }}/'>ALL</a>
+                </li>
+                <li>
+                    <a href='{{ baseurl }}/'>Java</a>
+                </li>
+                <li>
+                    <a href='{{ baseurl }}/'>JavaScript</a>
+                </li>
+                <li>
+                    <a href='{{ baseurl }}/'>DB</a>
+                </li>
+                <li>
+                    <a href='{{ baseurl }}/'>Others</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 
 </nav>

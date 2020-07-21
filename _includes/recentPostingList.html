@@ -1,24 +1,43 @@
-<div id="recentPostingList">
-  <table>
-    <caption>최근 등록한 게시글</caption>
-    <thead>
-      <tr>
-        <th>등록일</th>
-        <th>제목</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for post in site.posts %}
-      <tr>
-        <td>
-          <span>{{ post.date }}</span>
-        </td>
-        <td>
-          <a href = {{ post.url }}>{{ post.title }}</a>
-        </td>
-      </tr>
-      {% endif %}
-    <tbody>
-  </table>
-  test
-</div>
+<style>
+  #recentPosting {
+    border      : solid 1px #000000;
+    text-align  : center;
+    width       : 100%;
+  }
+  
+  .tr-1 {
+    width   : 30%;
+  }
+
+</style>
+
+<table id = 'recentPosting' border='1'>
+  <colgroup>
+    <col colspaan = '1' class = 'tr-1'/>
+    <col colspaan = '1' class = 'tr-2'/>
+  </colgroup>
+
+  <caption>최근 등록한 게시글</caption>
+  <thead>
+    <tr>
+      <th>등록일</th>
+      <th>제목</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in site.posts limit:5 %}
+    <tr>
+      <td>
+        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+      </td>
+      <td>
+        <a href = {{ post.url }}>{{ post.title }}</a>
+      </td>
+    </tr>
+    {% else %}
+    <tr>
+      <td colspan = "2" class = 'empty'>Is not Exist Recent Posting...</td>
+    </tr>
+    {% endfor %}
+  <tbody>
+</table>
