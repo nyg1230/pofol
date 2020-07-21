@@ -1,0 +1,45 @@
+<style>
+    .postList {
+        margin  : 5px;
+        border  : solid 1px #000000;
+        height  : auto;
+    }
+    .postList div {
+        display : table-cell;
+    }
+
+    .divImage {
+        min-width: 200px;
+        width: 20%;
+    }
+    .divDescription {
+        width: 65%;
+        vertical-align: middle;
+        padding  : 2%;
+    }
+    .divImage>img {
+        width: 100%;
+        max-height  : 150px;
+    }
+</style>
+
+{% for post in site.posts %}
+
+{% if post.category == page.type %}
+<div class = 'postList'>
+    <div class = 'divImage'>
+        <img src = '{{ site.baseurl }}{{ post.thumbnail }}'>
+    </div>
+    <div class = 'divDescription'>
+        <a href = '{{ site.baseurl}}{{ post.url }}'>
+            {% if post.description != nil %}
+                {{ post.description }}
+            {% else %}
+                내용없음
+            {% endif %}
+        </a>
+    </div>
+</div>
+{% endif %}
+
+{% endfor %}
