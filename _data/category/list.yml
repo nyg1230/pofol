@@ -1,0 +1,15 @@
+- name  : All
+  url   : /page/category/all
+
+- name  : Java
+  url   : /page/category/java
+
+- name  : JavaScript
+  url   : /page/category/javascript
+
+- name  : DB
+  url   : /page/category/db
+
+- name  : Others
+  url   : /page/category/others
+
