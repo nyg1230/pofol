@@ -1,0 +1,7 @@
+{
+  All         : '/page/category/all',
+  Java        : '/page/category/java',
+  JavaScript  : '/page/category/javascript',
+  DB          : '/page/category/db',
+  Others      : '/page/category/others'
+}
