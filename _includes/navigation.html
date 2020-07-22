@@ -52,6 +52,13 @@
                 <li>
                     <a href='{{ site.baseurl }}/'>Others</a>
                 </li>
+                
+                {% for cat in site.date.category.list %}
+                <li>
+                    <span>{{ cat }}</span>
+                </li>
+                {% endfor %}
+                
             </ul>
         </li>
     </ul>
