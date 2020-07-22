@@ -22,10 +22,11 @@
         max-height  : 150px;
     }
 </style>
-
+{% assign num = 0 %}
 {% for post in site.posts %}
 
-{% if post.category == page.type %}
+{% if post.category == page.type or page.type == "all" %}
+{% assign num = 1 %}
 <div class = 'postList'>
     <div class = 'divImage'>
         <img src = '{{ site.baseurl }}{{ post.thumbnail }}'>
@@ -43,3 +44,7 @@
 {% endif %}
 
 {% endfor %}
+
+{% if num == 0 %}
+<span>게시글이 존재하지 않습니다.</span>
+{% endif %}

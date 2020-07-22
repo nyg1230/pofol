@@ -7,35 +7,35 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
     <body>
         {% include header.html %}
+        <div id = 'content'>
+            <div id = "leftDiv">
+                <table id = 'postDetail' border = '1'>
+                    <thead>
+                        <tr>
+                            <th colspan='4'>{{ page.title }}</th>
+                        </tr>
+                        <tr>
+                            <td>작성일</td>
+                            <td>{{ page.date | date: "%Y-%m-%d" }}</td>
+                            <td>작성자</td>
+                            <td>{{ page.author }}</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">
+                                {{ content }}
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
 
-        <div id = "leftDiv">
-            <table id = 'postDetail' border = '1'>
-                <thead>
-                    <tr>
-                        <th colspan='4'>{{ page.title }}</th>
-                    </tr>
-                    <tr>
-                        <td>작성일</td>
-                        <td>{{ page.date | date: "%Y-%m-%d" }}</td>
-                        <td>작성자</td>
-                        <td>{{ page.author }}</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="4">
-                            {{ content }}
-                        </td>
-                    </tr>
-                </tbody>
-                <tfoot></tfoot>
-            </table>
+            <div id = "rightDiv">
+                {% include navigation.html %}
+            </div>
         </div>
-
-        <div id = "rightDiv">
-            {% include navigation.html %}
-        </div>
-        
         
         {% include footer.html %}
     </body>

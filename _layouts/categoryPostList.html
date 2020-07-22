@@ -8,15 +8,17 @@
     <body>
         {% include header.html %}
 
-        <div id = "leftDiv">
-            {% include postList.html %}
+        <div id = 'content'>
+            <div id = "leftDiv">
+                <h3>{{ page.type }}</h3>
+                {% include postList.html %}
+            </div>
+    
+            <div id = "rightDiv">
+                {% include navigation.html %}
+            </div>
         </div>
 
-        <div id = "rightDiv">
-            {% include navigation.html %}
-        </div>
-        
-        
         {% include footer.html %}
     </body>
 </html>
