@@ -37,26 +37,9 @@
             <input type = 'checkbox' id = 'chkCate' class = 'aco'>
             <label for='chkCate'>Category</label>
             <ul>
-                <li>
-                    <a href='{{ site.baseurl }}/'>ALL</a>
-                </li>
-                <li>
-                    <a href='{{ site.baseurl }}/page/category/javaList'>Java</a>
-                </li>
-                <li>
-                    <a href='{{ site.baseurl }}/'>JavaScript</a>
-                </li>
-                <li>
-                    <a href='{{ site.baseurl }}/'>DB</a>
-                </li>
-                <li>
-                    <a href='{{ site.baseurl }}/'>Others</a>
-                </li>
-                
                 {% for cat in site.data.category.list %}
                 <li>
-                    <span>{{ cat.name }}</span><br>
-                    <span>{{ cat.url }}</span>
+                    <a href = '{{ baseurl }}{{ cat.url }}'>{{ cat.name }}</a>
                 </li>
                 {% endfor %}
                 
