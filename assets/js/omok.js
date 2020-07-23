@@ -7,7 +7,7 @@ window.onload   = () => {
     })
 }
 
-const winPoint  = 3;
+const winPoint  = 5;
 let size    = -1;
 let omok    = undefined;
 let turn    = true;
@@ -35,6 +35,7 @@ function makeBoard($target, num) {
             }
             $target.appendChild($tr);
             omok[i] = new Array(parseInt(num));
+            historyEdit('', 'clear')
         }
         
     } catch(e) {
@@ -54,8 +55,9 @@ function cellClick($target) {
 
     $target.className   += ` ${turn ? 'bbb' : 'www'}`
     history.push(`${x}, ${y}, ${num}`)
+    historyEdit(`x = ${x}, y = ${y}, player = ${num}`)
     turn    = !turn;
-    console.log(history)
+    
 
     if(checkWin(x, y)) {
         alert('win');
@@ -97,6 +99,9 @@ function checkDirect(x, y, i, j, chkNum) {
 
 }
 
-function render($target, msg) {
-    $target.innerHTML   = msg;
+function historyEdit(msg, action) {
+    let $target         = document.querySelector('#history');
+
+    if(action == 'clear') $target.innerHTML = '';
+    else $target.innerHTML   += `${msg}<br>`
 }
