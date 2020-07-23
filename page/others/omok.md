@@ -1,0 +1,4 @@
+---
+layout  : omok
+title   : Omok
+---

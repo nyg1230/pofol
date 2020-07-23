@@ -37,7 +37,19 @@
             <input type = 'checkbox' id = 'chkCate' class = 'aco'>
             <label for='chkCate'>Category</label>
             <ul>
-                {% for cat in site.data.category.list %}
+                {% for cat in site.data.list.category %}
+                <li>
+                    <a href = '{{ site.baseurl }}{{ cat.url }}'>{{ cat.name }}</a>
+                </li>
+                {% endfor %}
+                
+            </ul>
+        </li>
+        <li>
+            <input type = 'checkbox' id = 'chkOthers' class = 'aco'>
+            <label for='chkOthers'>Ohers</label>
+            <ul>
+                {% for cat in site.data.list.others %}
                 <li>
                     <a href = '{{ site.baseurl }}{{ cat.url }}'>{{ cat.name }}</a>
                 </li>

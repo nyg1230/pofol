@@ -1,0 +1,25 @@
+---
+---
+@import "main";
+
+#boardSize {
+    width   : 20%;
+}
+
+#omokBoard {
+    margin  : auto;
+}
+
+.omok-cell {
+    width   : 15px;
+    height  : 15px;
+    background-color: cadetblue;
+}
+
+.bbb {
+    background-color    : black;
+}
+
+.www {
+    background-color    : white;
+}
