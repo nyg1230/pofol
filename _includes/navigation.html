@@ -31,13 +31,25 @@
     <br/>
     <ul>
         <li>
-            <a href="{{ site.baseurl }}/">Home</a>
+            <a href = "{{ site.baseurl }}/">Home</a>
         </li>
         <li>
             <input type = 'checkbox' id = 'chkCate' class = 'aco'>
             <label for='chkCate'>Category</label>
             <ul>
                 {% for cat in site.data.list.category %}
+                <li>
+                    <a href = '{{ site.baseurl }}{{ cat.url }}'>{{ cat.name }}</a>
+                </li>
+                {% endfor %}
+                
+            </ul>
+        </li>
+        <li>
+            <input type = 'checkbox' id = 'chkPjt' class = 'aco'>
+            <label for='chkPjt'>Project</label>
+            <ul>
+                {% for cat in site.data.list.project %}
                 <li>
                     <a href = '{{ site.baseurl }}{{ cat.url }}'>{{ cat.name }}</a>
                 </li>

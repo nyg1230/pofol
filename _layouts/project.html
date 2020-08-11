@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
     </head>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css">
     <body>
         {% include header.html %}
         <div id = 'content'>
@@ -12,18 +12,26 @@
                 <table id = 'postDetail' border = '1'>
                     <thead>
                         <tr>
-                            <th colspan='4'>{{ page.title }}</th>
+                            <th colspan='2'>{{ page.projectName }}</th>
                         </tr>
                         <tr>
-                            <td>작성일</td>
-                            <td>{{ page.date | date: "%Y-%m-%d" }}</td>
-                            <td>작성자</td>
-                            <td>{{ page.author }}</td>
+                            <td>수행기간</td>
+                            <td>{{ page.projectPeriod }}</td>
+                        </tr>
+                        <tr>
+                            <td>프로젝트 경로</td>
+                            <td>
+                                {% if page.projectUrl != null %}
+                                    <a href="{{ page.projectUrl }}" target = "_blank">{{ page.projectName }} 바로가기</a>
+                                {% else %}
+                                    <span>URL이 존재하지 않습니다.</span>
+                                {% endif %}
+                            </td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td colspan="4">
+                            <td colspan="2">
                                 <div id = "postDiv">
                                     {{ content }}
                                 </div>

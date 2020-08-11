@@ -13,13 +13,26 @@
 }
 
 #postDetail tbody {
-    height: 35.2em;
+    height: 36.6em;
 }
 
 #postDetail tbody td {
     height: 100%;
 }
 
+#postDiv {
+    height: 100%;
+    overflow: scroll;
+}
+
+#postDiv img {
+    max-width: 90%;
+}
+
 .oneLine {
     column-count: 4;
+}
+
+#imageRow img {
+    width   : auto;
 }
