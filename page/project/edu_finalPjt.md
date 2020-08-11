@@ -50,7 +50,7 @@ projectUrl      : https://github.com/RMHM/miniMap
     - Session을 이용한 회원 서비스
 
 ### DB 설계
-![DBModelling]({{ baseurl }}/assets/image/project/edu-finalPjt/final_DB_modelling.png)
+![DBModelling]({{ site.baseurl }}/assets/image/project/edu-finalPjt/final_DB_modelling.png)
 
 ### 담당 역활
 - 총괄
@@ -71,8 +71,8 @@ projectUrl      : https://github.com/RMHM/miniMap
 
 ### 프로젝트 내용
 
-![board1]({{ bsaeurl }}/assets/image/project/edu-finalPjt/final_board_1.png)  
-![board2]({{ bsaeurl }}/assets/image/project/edu-finalPjt/final_board_2.png)  
+![board1]({{ site.baseurl }}/assets/image/project/edu-finalPjt/final_board_1.png)  
+![board2]({{ site.baseurl }}/assets/image/project/edu-finalPjt/final_board_2.png)  
 **화면 설명**  
 기업 회원이 게시물 작성 권한을 얻어 광고를 할 수 있는 게시판이다.  
 게시물 목록은 3개씩 보여지며 게시글 내부에 이미지가 존재하면 첫 번쨰 이미지를 썸네일로써 보여진다.  
@@ -90,7 +90,7 @@ projectUrl      : https://github.com/RMHM/miniMap
 상세보기를 할 경우 상단의 사진과 같이 출력되며 신고되거나 삭제된 게시물을 쿼리스트링 수정으로 강제 접결할 경우  
 접근방지를 할 수 있게 하였다.  
 
-![chatiing]({{ bsaeurl }}/assets/image/project/edu-finalPjt/final_chat.png)  
+![chatiing]({{ site.baseurl }}/assets/image/project/edu-finalPjt/final_chat.png)  
 **화면 설명**  
 로그인을 해야 접근이 가능한 타임라인 페이지이다.  
 해당 페이지에 들어오게 되면 최근 작성한 타임라인 게시글 일부가 출력이 되어 보이며  
@@ -107,8 +107,8 @@ projectUrl      : https://github.com/RMHM/miniMap
 해당 타임라인 게시글을 차단하여 자신에게 보이지 않게 하며 쪽지 버튼을 누르면  
 해당 사용자에게 쪽지를 보내는 팝업창이 띄워지게 된다.  
 
-![calendar]({{ bseurl }}/assets/image/project/edu-finalPjt/final_calendar.png)  
-![calendarDetail]({{ bseurl }}/assets/image/project/edu-finalPjt/final_calendar_detail.png)  
+![calendar]({{ site.baseurl }}/assets/image/project/edu-finalPjt/final_calendar.png)  
+![calendarDetail]({{ site.baseurl }}/assets/image/project/edu-finalPjt/final_calendar_detail.png)  
 **화면 설명**  
 처음 행사달력에 입장을 하면  행사정보와 기온을 가지고 오기 전까지 사용자에게  
 기다려 달라는 의미의 로딩 이미지를 띄워주며 정보를 모두 가지고 오게 되면 좌측 사진과 같이  

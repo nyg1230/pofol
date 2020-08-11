@@ -43,7 +43,7 @@ projectPeriod   : 2018.11.12 ~ 2018.11.23
     - Session을 이용한 회원서비스
 
 ### DB 설계
-![DBModelling]({{ baseurl }}/assets/image/project/edu-semiPjt/semi_DB_modelling.png)
+![DBModelling]({{ site.baseurl }}/assets/image/project/edu-semiPjt/semi_DB_modelling.png)
 
 ### 담당 역활
 기능기획, DB설계, 관리자기능, 취향분석, 아이템 협업 필터링  
@@ -59,7 +59,7 @@ projectPeriod   : 2018.11.12 ~ 2018.11.23
 
 ### 프로젝트 내용  
 
-![pageMain]({{ baseurl }}/assets/image/project/edu-semiPjt/semi_page_main.jpeg)  
+![pageMain]({{ site.baseurl }}/assets/image/project/edu-semiPjt/semi_page_main.jpeg)  
 **화면 설명**  
 사이트에 처음 들어오면 상단엔 좌측부터 박스오피스 순위와 현재 상영중인 영화의 포스터가 ajax를 통해 일정 시간마다 자동으로 다음포스터로 넘어가게 표현된다.  
 바로 하단부터 차례대로 최신리뷰, 탑 20 리뷰 그리고 로그인을 하고 평점을 내린 항목이 존재하면 표시되는 영화 추천 리스트가 보이게 된다.  
@@ -71,7 +71,7 @@ API를 통해 박스오피스 순위, 영화 포스터와 영화 리뷰를 표�
 최하단에는 사용자 평가가 일정 이상 존재하면 추천 영화 리스트가 보이게 된다.  
   
 
-![pageAna]({{ baseurl }}/assets/image/project/edu-semiPjt/semi_page_ana.png)  
+![pageAna]({{ site.baseurl }}/assets/image/project/edu-semiPjt/semi_page_ana.png)  
 **화면 설명**  
 로그인을 해야 접근이 가능한 취향 분석 페이지이다.  
 평점을 내린 내역을 바탕으로 평점분포 그래프를 확인할 수 있으며 평균평점, 총 폄가수, 최고평점을 확인할 수 있다.  
@@ -84,8 +84,8 @@ AJAX를 통해 회원 평점 정보를 가지고 와서 차트 스크립트에 �
 또한 평점을 장르 점수로 변환하여 영화 선호도를 파악할 수 있게 해 놓았다.  
 그리고 리뷰어 구독 정보를 DB에서 가지고와 표시하였다.  
 
-![pageAdmin]({{ baseurl }}/assets/image/project/edu-semiPjt/semi_page_admin_1.png)  
-![pageAdmin]({{ baseurl }}/assets/image/project/edu-semiPjt/semi_page_admin_2.png)  
+![pageAdmin]({{ site.baseurl }}/assets/image/project/edu-semiPjt/semi_page_admin_1.png)  
+![pageAdmin]({{ site.baseurl }}/assets/image/project/edu-semiPjt/semi_page_admin_2.png)  
 **화면 설명**  
 관리자 기능 중 리뷰 관리 페이지이다.  
 먼저 리뷰추가는 관리자 기능에서 추가를 해 놓은 리뷰어 기준으로 유튜브 영상을 확인하고 추가 버튼을 누르면 영화를 검색하여 맞는 영화를 선택하여 등록한다.  
