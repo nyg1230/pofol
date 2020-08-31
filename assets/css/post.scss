@@ -5,6 +5,7 @@
 
 #postDetail {
     width: 100%;
+    height: 100%;
     padding: 1%;
 }
 
@@ -20,6 +21,25 @@
     height: 100%;
 }
 
+#postDiv {
+    height: 100%;
+    overflow: scroll;
+}
+
 .oneLine {
     column-count: 4;
+}
+
+#postDetail thead tr {
+    text-align: center;
+}
+
+.tdStyle1 {
+    width   : 15%;
+    text-align: center;
+}
+
+.tdStyle2 {
+    width   : 35%;
+    text-align: center;
 }

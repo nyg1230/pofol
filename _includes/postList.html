@@ -26,23 +26,24 @@
 {% for post in site.posts %}
 
 {% if post.category == page.type or page.type == "all" %}
-{% assign num = 1 %}
-<div class = 'postList'>
-    <div class = 'divImage'>
-        <img src = '{{ site.baseurl }}{{ post.thumbnail }}'>
+    {% assign num = 1 %}
+    <div class = 'postList'>
+        <div class = 'divImage'>
+            <img src = '{{ site.baseurl }}{{ post.thumbnail }}'>
+        </div>
+        <div class = 'divDescription'>
+            <a href = '{{ site.baseurl}}{{ post.url }}'>
+                {% if post.description != nil %}
+                    {{ post.description }}
+                {% else %}
+                    내용없음
+                {% endif %}
+            </a>
+            <br>
+            {{ post.author }} {{ post.date | date: "%Y-%m-%d" }}
+        </div>
     </div>
-    <div class = 'divDescription'>
-        <a href = '{{ site.baseurl}}{{ post.url }}'>
-            {% if post.description != nil %}
-                {{ post.description }}
-            {% else %}
-                내용없음
-            {% endif %}
-        </a>
-    </div>
-</div>
-{% endif %}
-
+    {% endif %}
 {% endfor %}
 
 {% if num == 0 %}

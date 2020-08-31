@@ -10,15 +10,21 @@
         <div id = 'content'>
             <div id = "leftDiv">
                 <table id = 'postDetail' border = '1'>
+                    <colgroup>
+                        <col class = 'tdStyle1'>
+                        <col class = 'tdStyle2'>
+                        <col class = 'tdStyle1'>
+                        <col class = 'tdStyle2'>
+                    </colgroup>
                     <thead>
                         <tr>
                             <th colspan='4'>{{ page.title }}</th>
                         </tr>
                         <tr>
-                            <td>작성일</td>
-                            <td>{{ page.date | date: "%Y-%m-%d" }}</td>
-                            <td>작성자</td>
-                            <td>{{ page.author }}</td>
+                            <td scope = 'col'>작성자</td>
+                            <td scope = 'col'>{{ page.author }}</td>
+                            <td scope = 'col'>작성일</td>
+                            <td scope = 'col'>{{ page.date | date: "%Y-%m-%d" }}</td>
                         </tr>
                     </thead>
                     <tbody>
